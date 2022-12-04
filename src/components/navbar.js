@@ -114,40 +114,9 @@ function Navbar({ logo }) {
           <NavbarItem to="/contact/" title="Contact">
             <FcContacts />
           </NavbarItem>
-        </div>
-        <div className="navbar-end">
-          <div className="navbar-item is-hidden-touch">
-            <div className="field is-grouped">
-              <iframe
-                src="https://ghbtns.com/github-btn.html?user=Abhith&repo=abhith.net&type=star&count=true&size=large"
-                frameBorder="0"
-                scrolling="0"
-                width="170"
-                height="30"
-                title="Star abhith/abhith.net on GitHub"
-              ></iframe>
-            </div>
-          </div>
-          <OutboundLink
-            className="navbar-item is-hidden-touch"
-            href="https://github.com/abhith/abhith.net"
-            target="_blank"
-          >
-            <span className="icon">
-              <GoMarkGithub size={24} />
-            </span>
-          </OutboundLink>
-          <OutboundLink
-            className="navbar-item is-hidden-touch"
-            href="https://twitter.com/AbhithRajan"
-            target="_blank"
-          >
-            <span className="icon" style={{ color: "#55acee" }}>
-              <FaTwitter size={24} />
-            </span>
-          </OutboundLink>
+      
           <div
-            className="navbar-item is-hidden-touch"
+            className="navbar-item is-hidden-touch "
             sx={themeStyles.modeOption}
           >
             <button
@@ -160,18 +129,7 @@ function Navbar({ logo }) {
               </div>
             </button>
           </div>
-          <div className="navbar-item">
-            <div className="field is-grouped">
-              <Link
-                to="/donate/"
-                className="button k-button k-primary raised has-gradient slanted"
-              >
-                <span>
-                  BUY ME A <FaCoffee />
-                </span>
-              </Link>
-            </div>
-          </div>
+
         </div>
       </div>
     </nav>
